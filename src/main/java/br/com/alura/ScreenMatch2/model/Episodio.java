@@ -16,7 +16,7 @@ public class Episodio {
         this.numeroEpisodio = dadosEpisodio.numero();
 
         try{
-            this.avaliacao = Double.valueOf(dadosEpisodio.avaliacao());
+            this.avaliacao = Double.parseDouble(dadosEpisodio.avaliacao());
         }catch (NumberFormatException ex){
             this.avaliacao = 0.0;
         }
